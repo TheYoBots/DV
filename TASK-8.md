@@ -1,6 +1,7 @@
 # pm3d coloring
 
 ```py
+# this will mostly not work. use 2nd one.
 import numpy as np
 import matplotlib.pyplot as pl
 from scipy.interpolate import griddata
@@ -36,19 +37,7 @@ Output:
 
 # 3D mapping
 ```py
-from matplotlib import pyplot as plt, cm, colors
-import numpy as np
-plt.rcParams["figure.figsize"] = [7.00, 3.50]
-plt.rcParams["figure.autolayout"] = True
-side = np.linspace(-2, 2, 15)
-X, Y = np.meshgrid(side, side)
-Z = np.exp(-((X - 1) ** 2 + Y ** 2))
-plt.pcolormesh(X, Y, Z, shading='auto')
-plt.show()
-```
-or
-```py
-from matplotlib import pyplot as plt, cm, colors
+import matplotlib.pyplot as plt
 import numpy as np
 plt.rcParams["figure.figsize"] = [7.00, 3.50]
 plt.rcParams["figure.autolayout"] = True

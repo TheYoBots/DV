@@ -23,31 +23,16 @@ Output:
 ```py
 import numpy as np
 import matplotlib.pyplot as plt
-xlist = np.linspace(-3.0, .0,100)
+xlist = np.linspace(-3.0, 3.0,100)
 ylist = np.linspace(-3.0, 3.0, 100)
 X, Y = np.meshgrid(xlist, ylist)
 Z = np.sqrt(X**2 + Y**2)
 fig,ax=plt.subplots(1,1)
 cp = ax.contourf(X, Y, Z)
-fig.colorbar(cp) # Add a colorbar to a plot ax.set_title('Filled Contours Plot')
-#ax.set_xlabel('x (cm)')
-ax.set_ylabel(
-'y (cm)')
-plt.show()
-```
-or
-```py
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-a = np.array([1, 2, 3])
-b = np.array([4, 5, 6, 7])
-a, b = np.meshgrid(a, b)
-# contour plot for a + b
-fig = plt.figure()
-axes = fig.gca(projection ='3d')
-axes.contour(a, b, a + b)
+fig.colorbar(cp) # Add a colorbar to a plot 
+ax.set_title('Filled Contours Plot')
+ax.set_xlabel('x (cm)')
+ax.set_ylabel('y (cm)')
 plt.show()
 ```
 Output:
