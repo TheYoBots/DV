@@ -1,4 +1,6 @@
 # Annotation
+2 working programs. Use 1st, but for remembering 2nd is easier.
+#### 1.
 ```py
 import numpy as np
 import matplotlib. pyplot as plt
@@ -17,7 +19,10 @@ ax.annotate('data = (%.1f, %.1f)'%(xdata, ydata), (xdata, ydata), xytext =(-2 * 
 disp = ax.annotate('display = (%.1f, %.1f)'%(xdisplay, ydisplay), (xdisplay, ydisplay), xytext =(0.5 * offset, -offset), xycoords ='figure pixels', textcoords ='offset points', bbox = bbox, arrowprops = arrowprops)
 plt.show()
 ```
-and
+Output:
+
+![image](https://github.com/TheYoBots/DV/assets/73843275/18bc17d3-637e-4e9d-9523-21f8305ac76f)
+#### 2.
 ```py
 import matplotlib.pyplot as plt
 import numpy as np
@@ -34,4 +39,4 @@ plt.show()
 
 Output:
 
-![image](https://github.com/TheYoBots/DV/assets/73843275/18bc17d3-637e-4e9d-9523-21f8305ac76f)
+![image](https://github.com/TheYoBots/DV/assets/73843275/3c6ee00a-088d-46c0-b95a-7cf56f67ca81)
