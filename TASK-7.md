@@ -1,7 +1,6 @@
 # Surfaces
 
 ```py
-from mpl_toolkits import mplot3d
 import numpy as np 
 import matplotlib.pyplot as plt 
 x = np.outer(np.linspace(-2, 2, 30), np.ones(30))
