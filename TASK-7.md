@@ -42,14 +42,13 @@ Output:
 
 ```py
 import matplotlib.pyplot as plt 
-from mpl_toolkits.mplot3d import axes3d 
-from matplotlib import pyplot
+from mpl_toolkits.mplot3d import axes3d
 fig = plt.figure() 
 wf = fig.add_subplot(111, projection='3d') 
 x, y, z = axes3d.get_test_data(0.1)
 wf.plot_wireframe(x,y,z, rstride=2, cstride=2, color='blue')
-wf.set_title('Example 1')
-pyplot.show()
+wf.set_title('Hidden Surface Plot')
+plt.show()
 ```
 Output:
 
